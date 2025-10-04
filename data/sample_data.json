@@ -1,0 +1,797 @@
+{
+  "project": "EduHub MongoDB Database",
+  "description": "Combined export of sample data and schema documentation",
+  "collections": {
+    "users": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e1594989631ae5fb9f5f43"
+          },
+          "userId": "STU001",
+          "email": "alice.smith@eduhub.com",
+          "firstName": "Alice",
+          "lastName": "Smith",
+          "role": "student",
+          "dateJoined": {
+            "$date": "2025-10-04T18:28:41.026Z"
+          },
+          "profile": {
+            "bio": "I love learning new things!",
+            "avatar": "alice_avatar.jpg",
+            "skills": [
+              "Math",
+              "Science"
+            ]
+          },
+          "isActive": true
+        },
+        {
+          "_id": {
+            "$oid": "68e1594989631ae5fb9f5f44"
+          },
+          "userId": "INST001",
+          "email": "prof.johnson@eduhub.com",
+          "firstName": "Michael",
+          "lastName": "Johnson",
+          "role": "instructor",
+          "dateJoined": {
+            "$date": "2023-01-15T00:00:00Z"
+          },
+          "profile": {
+            "bio": "Senior Python developer with 10+ years experience",
+            "avatar": "michael_johnson.jpg",
+            "skills": [
+              "Python",
+              "Django",
+              "Data Science",
+              "Web Development"
+            ]
+          },
+          "isActive": true
+        },
+        {
+          "_id": {
+            "$oid": "68e1594989631ae5fb9f5f45"
+          },
+          "userId": "INST002",
+          "email": "dr.smith@eduhub.com",
+          "firstName": "Sarah",
+          "lastName": "Smith",
+          "role": "instructor",
+          "dateJoined": {
+            "$date": "2023-02-20T00:00:00Z"
+          },
+          "profile": {
+            "bio": "Mathematics PhD and passionate educator",
+            "avatar": "sarah_smith.jpg",
+            "skills": [
+              "Calculus",
+              "Algebra",
+              "Statistics",
+              "Machine Learning"
+            ]
+          },
+          "isActive": true
+        },
+        {
+          "_id": {
+            "$oid": "68e1594989631ae5fb9f5f46"
+          },
+          "userId": "INST003",
+          "email": "design.maria@eduhub.com",
+          "firstName": "Maria",
+          "lastName": "Garcia",
+          "role": "instructor",
+          "dateJoined": {
+            "$date": "2023-03-10T00:00:00Z"
+          },
+          "profile": {
+            "bio": "UI/UX designer and frontend expert",
+            "avatar": "maria_garcia.jpg",
+            "skills": [
+              "JavaScript",
+              "React",
+              "UI/UX Design",
+              "CSS"
+            ]
+          },
+          "isActive": true
+        },
+        {
+          "_id": {
+            "$oid": "68e1594989631ae5fb9f5f47"
+          },
+          "userId": "INST004",
+          "email": "prof.lee@eduhub.com",
+          "firstName": "Daniel",
+          "lastName": "Lee",
+          "role": "instructor",
+          "dateJoined": {
+            "$date": "2023-06-01T00:00:00Z"
+          },
+          "profile": {
+            "bio": "Cloud engineer and AWS certified trainer",
+            "avatar": "daniel_lee.jpg",
+            "skills": [
+              "AWS",
+              "DevOps",
+              "Docker",
+              "Kubernetes"
+            ]
+          },
+          "isActive": true
+        }
+      ],
+      "document_count": 23,
+      "sample_fields": [
+        "_id",
+        "userId",
+        "email",
+        "firstName",
+        "lastName",
+        "role",
+        "dateJoined",
+        "profile",
+        "isActive"
+      ]
+    },
+    "courses": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e15abe89631ae5fb9f5f58"
+          },
+          "courseId": "PY101",
+          "title": "Python Programming for Beginners",
+          "description": "Learn Python from scratch with hands-on projects",
+          "instructorId": "INST001",
+          "category": "Programming",
+          "level": "beginner",
+          "duration": 40,
+          "price": 99.99,
+          "tags": [
+            "python",
+            "programming",
+            "beginners",
+            "coding"
+          ],
+          "createdAt": {
+            "$date": "2023-06-01T00:00:00Z"
+          },
+          "updatedAt": {
+            "$date": "2023-06-01T00:00:00Z"
+          },
+          "isPublished": true
+        },
+        {
+          "_id": {
+            "$oid": "68e15abe89631ae5fb9f5f59"
+          },
+          "courseId": "MATH201",
+          "title": "Advanced Mathematics",
+          "description": "Master calculus, algebra, and mathematical thinking",
+          "instructorId": "INST002",
+          "category": "Mathematics",
+          "level": "advanced",
+          "duration": 60,
+          "price": 149.99,
+          "tags": [
+            "mathematics",
+            "calculus",
+            "algebra",
+            "problem-solving"
+          ],
+          "createdAt": {
+            "$date": "2023-06-15T00:00:00Z"
+          },
+          "updatedAt": {
+            "$date": "2023-06-15T00:00:00Z"
+          },
+          "isPublished": true
+        },
+        {
+          "_id": {
+            "$oid": "68e15abe89631ae5fb9f5f5a"
+          },
+          "courseId": "WEB101",
+          "title": "Web Development Fundamentals",
+          "description": "Build websites with HTML, CSS, and JavaScript",
+          "instructorId": "INST003",
+          "category": "Web Development",
+          "level": "beginner",
+          "duration": 35,
+          "price": 79.99,
+          "tags": [
+            "web development",
+            "html",
+            "css",
+            "javascript",
+            "frontend"
+          ],
+          "createdAt": {
+            "$date": "2023-07-01T00:00:00Z"
+          },
+          "updatedAt": {
+            "$date": "2023-07-01T00:00:00Z"
+          },
+          "isPublished": true
+        },
+        {
+          "_id": {
+            "$oid": "68e15abe89631ae5fb9f5f5b"
+          },
+          "courseId": "DATA101",
+          "title": "Data Science Introduction",
+          "description": "Explore data analysis, visualization, and basic machine learning",
+          "instructorId": "INST004",
+          "category": "Data Science",
+          "level": "intermediate",
+          "duration": 50,
+          "price": 129.99,
+          "tags": [
+            "data science",
+            "python",
+            "pandas",
+            "visualization",
+            "analysis"
+          ],
+          "createdAt": {
+            "$date": "2023-07-20T00:00:00Z"
+          },
+          "updatedAt": {
+            "$date": "2023-07-20T00:00:00Z"
+          },
+          "isPublished": true
+        },
+        {
+          "_id": {
+            "$oid": "68e15abe89631ae5fb9f5f5c"
+          },
+          "courseId": "CLOUD101",
+          "title": "AWS Cloud Fundamentals",
+          "description": "Learn the basics of cloud computing with AWS services",
+          "instructorId": "INST005",
+          "category": "Cloud Computing",
+          "level": "beginner",
+          "duration": 30,
+          "price": 119.99,
+          "tags": [
+            "aws",
+            "cloud",
+            "devops",
+            "infrastructure"
+          ],
+          "createdAt": {
+            "$date": "2023-08-05T00:00:00Z"
+          },
+          "updatedAt": {
+            "$date": "2023-08-05T00:00:00Z"
+          },
+          "isPublished": true
+        }
+      ],
+      "document_count": 11,
+      "sample_fields": [
+        "_id",
+        "courseId",
+        "title",
+        "description",
+        "instructorId",
+        "category",
+        "level",
+        "duration",
+        "price",
+        "tags",
+        "createdAt",
+        "updatedAt",
+        "isPublished"
+      ]
+    },
+    "enrollments": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e15d1c89631ae5fb9f5f60"
+          },
+          "enrollmentId": "ENR001",
+          "studentId": "STU001",
+          "courseId": "PY101",
+          "enrolledAt": {
+            "$date": "2023-08-01T00:00:00Z"
+          },
+          "progress": 75,
+          "completed": false
+        },
+        {
+          "_id": {
+            "$oid": "68e15d1c89631ae5fb9f5f61"
+          },
+          "enrollmentId": "ENR002",
+          "studentId": "STU001",
+          "courseId": "DATA101",
+          "enrolledAt": {
+            "$date": "2023-08-15T00:00:00Z"
+          },
+          "progress": 40,
+          "completed": false
+        },
+        {
+          "_id": {
+            "$oid": "68e15d1c89631ae5fb9f5f62"
+          },
+          "enrollmentId": "ENR003",
+          "studentId": "STU001",
+          "courseId": "MATH201",
+          "enrolledAt": {
+            "$date": "2023-09-01T00:00:00Z"
+          },
+          "progress": 100,
+          "completed": true
+        },
+        {
+          "_id": {
+            "$oid": "68e15d1c89631ae5fb9f5f63"
+          },
+          "enrollmentId": "ENR004",
+          "studentId": "STU002",
+          "courseId": "WEB101",
+          "enrolledAt": {
+            "$date": "2023-08-05T00:00:00Z"
+          },
+          "progress": 90,
+          "completed": false
+        },
+        {
+          "_id": {
+            "$oid": "68e15d1c89631ae5fb9f5f64"
+          },
+          "enrollmentId": "ENR005",
+          "studentId": "STU002",
+          "courseId": "PY101",
+          "enrolledAt": {
+            "$date": "2023-08-10T00:00:00Z"
+          },
+          "progress": 60,
+          "completed": false
+        }
+      ],
+      "document_count": 33,
+      "sample_fields": [
+        "_id",
+        "enrollmentId",
+        "studentId",
+        "courseId",
+        "enrolledAt",
+        "progress",
+        "completed"
+      ]
+    },
+    "lessons": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e15e3989631ae5fb9f5f7e"
+          },
+          "lessonId": "L001",
+          "courseId": "PY101",
+          "title": "Introduction to Python",
+          "content": "What is Python and why learn it?",
+          "duration": 2,
+          "order": 1
+        },
+        {
+          "_id": {
+            "$oid": "68e15e3989631ae5fb9f5f7f"
+          },
+          "lessonId": "L002",
+          "courseId": "PY101",
+          "title": "Variables and Data Types",
+          "content": "Learn about strings, numbers, and booleans",
+          "duration": 3,
+          "order": 2
+        },
+        {
+          "_id": {
+            "$oid": "68e15e3989631ae5fb9f5f80"
+          },
+          "lessonId": "L003",
+          "courseId": "PY101",
+          "title": "Control Structures",
+          "content": "If statements and loops",
+          "duration": 4,
+          "order": 3
+        },
+        {
+          "_id": {
+            "$oid": "68e15e3989631ae5fb9f5f81"
+          },
+          "lessonId": "L004",
+          "courseId": "PY101",
+          "title": "Functions in Python",
+          "content": "Defining and calling functions",
+          "duration": 3,
+          "order": 4
+        },
+        {
+          "_id": {
+            "$oid": "68e15e3989631ae5fb9f5f82"
+          },
+          "lessonId": "L005",
+          "courseId": "PY101",
+          "title": "Working with Lists",
+          "content": "Using Python lists effectively",
+          "duration": 4,
+          "order": 5
+        }
+      ],
+      "document_count": 40,
+      "sample_fields": [
+        "_id",
+        "lessonId",
+        "courseId",
+        "title",
+        "content",
+        "duration",
+        "order"
+      ]
+    },
+    "assignments": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e1602189631ae5fb9f5fa6"
+          },
+          "assignmentId": "A001",
+          "courseId": "PY101",
+          "title": "Python Basics Quiz",
+          "description": "Test your understanding of Python fundamentals",
+          "dueDate": {
+            "$date": "2023-09-15T00:00:00Z"
+          },
+          "maxPoints": 100,
+          "assignmentType": "quiz",
+          "instructions": "Complete MCQs on Python syntax",
+          "createdAt": {
+            "$date": "2023-08-10T00:00:00Z"
+          }
+        },
+        {
+          "_id": {
+            "$oid": "68e1602189631ae5fb9f5fa7"
+          },
+          "assignmentId": "A002",
+          "courseId": "PY101",
+          "title": "Calculator Program",
+          "description": "Build a simple calculator in Python",
+          "dueDate": {
+            "$date": "2023-09-25T00:00:00Z"
+          },
+          "maxPoints": 150,
+          "assignmentType": "project",
+          "instructions": "Support add, subtract, multiply, divide",
+          "createdAt": {
+            "$date": "2023-08-20T00:00:00Z"
+          }
+        },
+        {
+          "_id": {
+            "$oid": "68e1602189631ae5fb9f5fa8"
+          },
+          "assignmentId": "A003",
+          "courseId": "PY101",
+          "title": "List & Loops Exercises",
+          "description": "Practice using loops and lists",
+          "dueDate": {
+            "$date": "2023-10-02T00:00:00Z"
+          },
+          "maxPoints": 120,
+          "assignmentType": "homework",
+          "instructions": "Write Python programs for given tasks",
+          "createdAt": {
+            "$date": "2023-08-25T00:00:00Z"
+          }
+        },
+        {
+          "_id": {
+            "$oid": "68e1602189631ae5fb9f5fa9"
+          },
+          "assignmentId": "A004",
+          "courseId": "MATH201",
+          "title": "Calculus Problem Set",
+          "description": "Practice derivatives",
+          "dueDate": {
+            "$date": "2023-09-18T00:00:00Z"
+          },
+          "maxPoints": 100,
+          "assignmentType": "homework",
+          "instructions": "Solve 10 problems with steps",
+          "createdAt": {
+            "$date": "2023-08-12T00:00:00Z"
+          }
+        },
+        {
+          "_id": {
+            "$oid": "68e1602189631ae5fb9f5faa"
+          },
+          "assignmentId": "A005",
+          "courseId": "MATH201",
+          "title": "Statistics Quiz",
+          "description": "Probability and distributions",
+          "dueDate": {
+            "$date": "2023-09-28T00:00:00Z"
+          },
+          "maxPoints": 80,
+          "assignmentType": "quiz",
+          "instructions": "Complete MCQs",
+          "createdAt": {
+            "$date": "2023-08-20T00:00:00Z"
+          }
+        }
+      ],
+      "document_count": 20,
+      "sample_fields": [
+        "_id",
+        "assignmentId",
+        "courseId",
+        "title",
+        "description",
+        "dueDate",
+        "maxPoints",
+        "assignmentType",
+        "instructions",
+        "createdAt"
+      ]
+    },
+    "submissions": {
+      "sample_documents": [
+        {
+          "_id": {
+            "$oid": "68e161b789631ae5fb9f5fba"
+          },
+          "submissionId": "SUB001",
+          "assignmentId": "A001",
+          "studentId": "STU001",
+          "submittedAt": {
+            "$date": "2023-09-10T14:30:00Z"
+          },
+          "content": "Submission for A001 by STU001",
+          "fileUrl": "submissions/STU001_A001.pdf",
+          "status": "graded",
+          "grade": 80,
+          "gradedAt": {
+            "$date": "2023-09-15T10:00:00Z"
+          },
+          "feedback": "Well done!"
+        },
+        {
+          "_id": {
+            "$oid": "68e161b789631ae5fb9f5fbb"
+          },
+          "submissionId": "SUB002",
+          "assignmentId": "A002",
+          "studentId": "STU001",
+          "submittedAt": {
+            "$date": "2023-09-11T14:30:00Z"
+          },
+          "content": "Submission for A002 by STU001",
+          "fileUrl": "submissions/STU001_A002.pdf",
+          "status": "graded",
+          "grade": 75,
+          "gradedAt": {
+            "$date": "2025-10-04T19:31:46.528Z"
+          },
+          "feedback": "Good implementation. Consider adding error handling."
+        },
+        {
+          "_id": {
+            "$oid": "68e161b789631ae5fb9f5fbc"
+          },
+          "submissionId": "SUB003",
+          "assignmentId": "A001",
+          "studentId": "STU002",
+          "submittedAt": {
+            "$date": "2023-09-11T14:30:00Z"
+          },
+          "content": "Submission for A001 by STU002",
+          "fileUrl": "submissions/STU002_A001.pdf",
+          "status": "graded",
+          "grade": 80,
+          "gradedAt": {
+            "$date": "2023-09-16T10:00:00Z"
+          },
+          "feedback": "Well done!"
+        },
+        {
+          "_id": {
+            "$oid": "68e161b789631ae5fb9f5fbd"
+          },
+          "submissionId": "SUB004",
+          "assignmentId": "A002",
+          "studentId": "STU002",
+          "submittedAt": {
+            "$date": "2023-09-12T14:30:00Z"
+          },
+          "content": "Submission for A002 by STU002",
+          "fileUrl": "submissions/STU002_A002.pdf",
+          "status": "submitted",
+          "grade": null,
+          "gradedAt": null,
+          "feedback": null
+        },
+        {
+          "_id": {
+            "$oid": "68e161b789631ae5fb9f5fbe"
+          },
+          "submissionId": "SUB005",
+          "assignmentId": "A001",
+          "studentId": "STU003",
+          "submittedAt": {
+            "$date": "2023-09-12T14:30:00Z"
+          },
+          "content": "Submission for A001 by STU003",
+          "fileUrl": "submissions/STU003_A001.pdf",
+          "status": "graded",
+          "grade": 80,
+          "gradedAt": {
+            "$date": "2023-09-17T10:00:00Z"
+          },
+          "feedback": "Well done!"
+        }
+      ],
+      "document_count": 26,
+      "sample_fields": [
+        "_id",
+        "submissionId",
+        "assignmentId",
+        "studentId",
+        "submittedAt",
+        "content",
+        "fileUrl",
+        "status",
+        "grade",
+        "gradedAt",
+        "feedback"
+      ]
+    }
+  },
+  "schema": {
+    "indexes": {
+      "users": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "user_email_unique",
+          "keys": {
+            "email": 1
+          },
+          "unique": true
+        },
+        {
+          "name": "user_role_active",
+          "keys": {
+            "role": 1,
+            "isActive": 1
+          },
+          "unique": false
+        }
+      ],
+      "courses": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "course_title_category_search",
+          "keys": {
+            "_fts": "text",
+            "_ftsx": 1,
+            "category": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "course_instructor_published",
+          "keys": {
+            "instructorId": 1,
+            "isPublished": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "course_catalog_browsing",
+          "keys": {
+            "category": 1,
+            "level": 1,
+            "isPublished": 1
+          },
+          "unique": false
+        }
+      ],
+      "enrollments": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "enrollment_student_course",
+          "keys": {
+            "studentId": 1,
+            "courseId": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "student_dashboard_enrollments",
+          "keys": {
+            "studentId": 1,
+            "completed": 1,
+            "progress": -1
+          },
+          "unique": false
+        }
+      ],
+      "lessons": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        }
+      ],
+      "assignments": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "assignment_due_date",
+          "keys": {
+            "dueDate": 1
+          },
+          "unique": false
+        }
+      ],
+      "submissions": [
+        {
+          "name": "_id_",
+          "keys": {
+            "_id": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "submission_student_status",
+          "keys": {
+            "studentId": 1,
+            "status": 1
+          },
+          "unique": false
+        },
+        {
+          "name": "submission_grading_workflow",
+          "keys": {
+            "status": 1,
+            "gradedAt": -1
+          },
+          "unique": false
+        }
+      ]
+    }
+  }
+}

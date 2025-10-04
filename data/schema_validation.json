@@ -1,0 +1,78 @@
+{
+  "project": "EduHub MongoDB Schema Validation",
+  "description": "Comprehensive schema validation rules for all collections",
+  "validation_rules": {
+    "users": {
+      "required_fields": [
+        "userId",
+        "email",
+        "firstName",
+        "lastName",
+        "role",
+        "dateJoined",
+        "isActive"
+      ],
+      "field_validations": {
+        "email": "Must be valid email format",
+        "role": "Must be 'student' or 'instructor'",
+        "firstName": "1-50 characters",
+        "lastName": "1-50 characters"
+      },
+      "schema_applied": true
+    },
+    "courses": {
+      "required_fields": [
+        "courseId",
+        "title",
+        "instructorId",
+        "category",
+        "level",
+        "price",
+        "isPublished"
+      ],
+      "field_validations": {
+        "level": "Must be 'beginner', 'intermediate', or 'advanced'",
+        "price": "Must be non-negative number",
+        "duration": "Must be non-negative number",
+        "title": "5-100 characters"
+      },
+      "schema_applied": true
+    },
+    "enrollments": {
+      "required_fields": [
+        "enrollmentId",
+        "studentId",
+        "courseId",
+        "enrolledAt",
+        "progress",
+        "completed"
+      ],
+      "field_validations": {
+        "progress": "Must be between 0 and 100",
+        "completed": "Must be boolean"
+      },
+      "schema_applied": true
+    },
+    "submissions": {
+      "required_fields": [
+        "submissionId",
+        "assignmentId",
+        "studentId",
+        "submittedAt",
+        "status"
+      ],
+      "field_validations": {
+        "status": "Must be 'submitted', 'graded', or 'returned'",
+        "grade": "Must be non-negative number or null"
+      },
+      "schema_applied": true
+    }
+  },
+  "data_integrity_checks": [
+    "Course instructor references valid users",
+    "Enrollment student references valid students",
+    "Enrollment course references valid courses",
+    "Submission student references valid students",
+    "Submission assignment references valid assignments"
+  ]
+}
